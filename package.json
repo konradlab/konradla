@@ -1,0 +1,39 @@
+{
+    "name": "danon-starter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "js/app.js",
+    "scripts": {
+        "build": "set NODE_ENV=production && webpack --mode=production",
+        "build:dev": "set NODE_ENV=development && webpack --mode=development",
+        "start:dev": "set NODE_ENV=development && webpack-dev-server --mode=development"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "bootstrap": "^4.5.0",
+        "browser-sync": "^2.26.7",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "clean-webpack-plugin": "^3.0.0",
+        "css-loader": "^3.2.0",
+        "file-loader": "^4.2.0",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.2.0",
+        "image-webpack-loader": "^6.0.0",
+        "mini-css-extract-plugin": "^0.8.0",
+        "node-sass": "^4.13.0",
+        "pug": "^2.0.4",
+        "pug-loader": "^2.4.0",
+        "sass-loader": "^8.0.0",
+        "style-loader": "^1.0.0",
+        "url-loader": "^2.2.0",
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.10",
+        "webpack-dev-server": "^3.9.0"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.4.0",
+        "jquery": "^3.5.1"
+    }
+}

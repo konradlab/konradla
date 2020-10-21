@@ -1,0 +1,68 @@
+.hamburger {
+    background-color: $white;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 100;
+    transition: 0.2s background-color;
+    &::before,
+    &::after {
+        background-color: $black;
+        width: calc(100% - 24px);
+        height: 2px;
+        position: absolute;
+        content: '';
+        border-radius: 5px;
+        transition: 0.3s width, 0.3s top, 0.3s transform, 0.3s background-color;
+    }
+    &::before {
+        width: calc(100% - 30px);
+        right: 12px;
+        top: calc(50% - 7px);
+    }
+    &::after {
+        bottom: calc(50% - 7px);
+        left: 12px;
+    }
+    span {
+        background-color: $black;
+        width: calc(100% - 24px);
+        height: 2px;
+        border-radius: 5px;
+        transition: 0.2s opacity;
+    }
+    &:hover {
+        background-color: $black;
+
+        &::before {
+            width: calc(100% - 24px);
+        }
+    }
+    &--toggle {
+        background-color: transparent;
+        &::before,
+        &::after {
+            width: calc(100% - 24px);
+            top: calc(50% - 1px);
+        }
+        &::before {
+            transform: rotate(-45deg);
+        }
+        &::after {
+            transform: rotate(45deg);
+        }
+        span {
+            opacity: 0;
+        }
+    }
+}
