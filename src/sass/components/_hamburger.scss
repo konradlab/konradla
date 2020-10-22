@@ -1,68 +1,92 @@
 .hamburger {
-    background-color: $white;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    cursor: pointer;
-    top: 0;
+    height: 60px;
+    width: 60px;
+    top:0;
     right: 0;
-    position: fixed;
-    z-index: 100;
-    transition: 0.2s background-color;
-    &::before,
-    &::after {
-        background-color: $black;
-        width: calc(100% - 24px);
-        height: 2px;
+    position: absolute;
+    .inner {
+        width: 26px;
+        height: 20px;
+        margin-top: 3px;
+        transform: rotate(0);
+        transition: .5s ease-in-out;
+        cursor: pointer;
         position: absolute;
-        content: '';
-        border-radius: 5px;
-        transition: 0.3s width, 0.3s top, 0.3s transform, 0.3s background-color;
-    }
-    &::before {
-        width: calc(100% - 30px);
-        right: 12px;
-        top: calc(50% - 7px);
-    }
-    &::after {
-        bottom: calc(50% - 7px);
-        left: 12px;
+        top: 17px;
+        right: 17px;
+        z-index:99999;
+        &:hover span:nth-child(4), &:hover span:nth-child(6) {
+            width: 50%;
+        }
     }
     span {
-        background-color: $black;
-        width: calc(100% - 24px);
-        height: 2px;
-        border-radius: 5px;
-        transition: 0.2s opacity;
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 50%;
+        background-color: #0d3960;
+        opacity: 1;
+        transform: rotate(0);
+        transition: .2s ease-in-out;
+        &:nth-child(4) {
+            width: 35%;
+        }
+        &:nth-child(6) {
+            width: 20%;
+        }
+        &:nth-child(even) {
+            left: 49%;
+            border-radius: 0 9px 9px 0;
+        }
+        &:nth-child(odd) {
+            left: 0;
+            border-radius: 9px 0 0 9px;
+        }
+        &:nth-child(1), &:nth-child(2) {
+            top: 0;
+        }
+        &:nth-child(3), &:nth-child(4) {
+            top: 10px;
+        }
+        &:nth-child(5), &:nth-child(6) {
+            top: 19px;
+        }
+        
     }
-    &:hover {
-        background-color: $black;
+    &--toggle span:nth-child(1), &--toggle span:nth-child(6) {
+        transform: rotate(45deg);
+    }
+    &--toggle span:nth-child(2), &--toggle span:nth-child(5) {
+        transform: rotate(-45deg);
+    }
+    &--toggle span:nth-child(1) {
+        left: 2px;
+        top: 6px;
+    }
+    &--toggle span:nth-child(2) {
+        left: calc(50% - 2px);
+        top: 6px;
+    }
+    &--toggle span:nth-child(3) {
+        left: -50%;
+        opacity: 0;
+    }
+    &--toggle span:nth-child(4) {
+        left: 100%;
+        opacity: 0;
+        width: 50%;
+    }
+    &--toggle span:nth-child(5) {
+        left: 2px;
+        top: 16px;
+    }
+    &--toggle span:nth-child(6) {
+        left: calc(50% - 2px);
+        top: 16px;
+        width: 50%;
+    }
 
-        &::before {
-            width: calc(100% - 24px);
-        }
-    }
-    &--toggle {
-        background-color: transparent;
-        &::before,
-        &::after {
-            width: calc(100% - 24px);
-            top: calc(50% - 1px);
-        }
-        &::before {
-            transform: rotate(-45deg);
-        }
-        &::after {
-            transform: rotate(45deg);
-        }
-        span {
-            opacity: 0;
-        }
+    &:hover span {
+        background-color: #0d3960;
     }
 }

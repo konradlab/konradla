@@ -4,29 +4,48 @@ block variables
     - var title = 'Homepage';
 
 block content
-    .container-fluid.sticky-top.bg-white.p-2
-        .row
-            .col
-                h1#logo.logo
-                    a(href='https://konrad.la/' title='Wybieraj najlepsze doświadczenia')
-                        img.mw-100(src=require('~images/logo.svg') alt='Wybieraj najlepsze doświadczenia') 
-            .col
-                #hamburger
-                    .inner
-                        span
-                        span
-                        span
-                        span
-                        span
-                        span
+    .container-fluid.sticky-top.bg-white.position-relative
+        .px-3.py-4
+            .row
+                .col
+                    h1#logo.logo
+                        a(href='https://konrad.la/' title='Wybieraj najlepsze doświadczenia')
+                            img.mw-100(src=require('~images/logo.svg') alt='Wybieraj najlepsze doświadczenia') 
+                .col
+                    .navbar.navbar-expander
+                        ul.navbarnav
+                            li.nav-item
+                                a.nav-link O mnie
+                            li.nav-item
+                                a.nav-link O mnie
+                            li.nav-item
+                                a.nav-link O mnie
+                            li.nav-item
+                                a.nav-link O mnie
+                            li.nav-item
+                                a.nav-link O mnie
+                    include root/hamburger.pug
     .container
         .row
-            .col-md-6
-                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis provident deleniti minima illum amet laudantium eos maxime, illo sed, cumque praesentium placeat cupiditate adipisci vel consectetur tenetur corrupti quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis provident deleniti minima illum amet laudantium eos maxime, illo sed, cumque praesentium placeat cupiditate adipisci vel consectetur tenetur corrupti quo!
-                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis provident deleniti minima illum amet laudantium eos maxime, illo sed, cumque praesentium placeat cupiditate adipisci vel consectetur tenetur corrupti quo!
-                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis provident deleniti minima illum amet laudantium eos maxime, illo sed, cumque praesentium placeat cupiditate adipisci vel consectetur tenetur corrupti quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis provident deleniti minima illum amet laudantium eos maxime, illo sed, cumque praesentium placeat cupiditate adipisci vel consectetur tenetur corrupti quo!
-                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis provident deleniti minima illum amet laudantium eos maxime, illo sed, cumque praesentium placeat cupiditate adipisci vel consectetur tenetur corrupti quo!
-                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis provident deleniti minima illum amet laudantium eos maxime, illo sed, cumque praesentium placeat cupiditate adipisci vel consectetur tenetur corrupti quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis provident deleniti minima illum amet laudantium eos maxime, illo sed, cumque praesentium placeat cupiditate adipisci vel consectetur tenetur corrupti quo!
-                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis provident deleniti minima illum amet laudantium eos maxime, illo sed, cumque praesentium placeat cupiditate adipisci vel consectetur tenetur corrupti quo!
-                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis provident deleniti minima illum amet laudantium eos maxime, illo sed, cumque praesentium placeat cupiditate adipisci vel consectetur tenetur corrupti quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis provident deleniti minima illum amet laudantium eos maxime, illo sed, cumque praesentium placeat cupiditate adipisci vel consectetur tenetur corrupti quo!
-                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis provident deleniti minima illum amet laudantium eos maxime, illo sed, cumque praesentium placeat cupiditate adipisci vel consectetur tenetur corrupti quo!
+            .d-flex.flex-column.flex-md-row.flex-wrap.justify-content-between
+                .item.border-0.mx-4.mb-5
+                    img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+                    .card-body
+                        h2.h2.font-weight-bold Card title
+                        p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        a.btn.btn-lg.btn-primary Czytaj więcej
+                .item.border-0.mx-4.mb-5
+                    img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+                    .card-body
+                        h2.h2.font-weight-bold Card title
+                        p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .item.border-0.mx-4.mb-5
+                    img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+                    .card-body
+                        h2.h2.font-weight-bold Card title
+                        p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                .item.border-0.mx-4.mb-5
+                    img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+                    .card-body
+                        h2.h2.font-weight-bold Card title
+                        p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.

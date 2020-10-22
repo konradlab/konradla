@@ -1,0 +1,26 @@
+extends layouts/main.pug
+
+block variables
+    - var title = 'Post';
+
+block content
+    .container-fluid.sticky-top.bg-white.position-relative
+        .px-3.py-4
+            .row
+                .col
+                    h1#logo.logo
+                        a(href='https://konrad.la/' title='Wybieraj najlepsze doświadczenia')
+                            img.mw-100(src=require('~images/logo.svg') alt='Wybieraj najlepsze doświadczenia') 
+                .col
+                    include root/hamburger.pug
+    .container
+        .row
+            .col-md-8.offset-md-2
+                | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nostrum alias ab debitis qui vel incidunt est ratione ut nulla non sit, beatae placeat iste nihil! Quo consequuntur aliquid facilis!
+                | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nostrum alias ab debitis qui vel incidunt est ratione ut nulla non sit, beatae placeat iste nihil! Quo consequuntur aliquid facilis!
+                | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nostrum alias ab debitis qui vel incidunt est ratione ut nulla non sit, beatae placeat iste nihil! Quo consequuntur aliquid facilis!
+                | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nostrum alias ab debitis qui vel incidunt est ratione ut nulla non sit, beatae placeat iste nihil! Quo consequuntur aliquid facilis!
+                | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nostrum alias ab debitis qui vel incidunt est ratione ut nulla non sit, beatae placeat iste nihil! Quo consequuntur aliquid facilis!
+                | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nostrum alias ab debitis qui vel incidunt est ratione ut nulla non sit, beatae placeat iste nihil! Quo consequuntur aliquid facilis!
+                | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nostrum alias ab debitis qui vel incidunt est ratione ut nulla non sit, beatae placeat iste nihil! Quo consequuntur aliquid facilis!
+                | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nostrum alias ab debitis qui vel incidunt est ratione ut nulla non sit, beatae placeat iste nihil! Quo consequuntur aliquid facilis!
