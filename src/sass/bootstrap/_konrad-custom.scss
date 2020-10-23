@@ -19,12 +19,12 @@ body {
     &__nav {
         a {
             color:$primary;
+            font-weight: 400;
         }
     }
-    &__social {
-        height: 60px;
-        li {
-            width: 18px;
+    .socials {
+        svg {
+            stroke: #7CCDDD;
         }
     }
 }
