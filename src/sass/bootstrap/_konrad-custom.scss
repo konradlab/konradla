@@ -1,5 +1,7 @@
+$primary: #0d3960;
+
 $theme-colors: (
-    "primary": #0d3960,
+    "primary": $primary,
 );
 
 body {
@@ -15,7 +17,9 @@ body {
         max-width: 150px;
     }
     &__nav {
-
+        a {
+            color:$primary;
+        }
     }
     &__social {
         height: 60px;

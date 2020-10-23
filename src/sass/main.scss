@@ -1,15 +1,5 @@
-$theme-colors: (
-    "primary": #0d3960,
-);
-
 @import 'mixins';
 @import 'fonts';
 
 @import 'bootstrap/bootstrap';
-
 @import 'components';
-@import 'konrad-custom';
-
-$theme-colors: (
-    "primary": #0d3960,
-);

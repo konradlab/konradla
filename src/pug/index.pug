@@ -9,8 +9,8 @@ block content
             .header__logo.p-2.mr-auto
                 a(href='https://konrad.la/' title='Wybieraj najlepsze doświadczenia').logo
                     img.mw-100(src=require('~images/logo.svg') alt='Wybieraj najlepsze doświadczenia') 
-            .p-2.navbar.d-none.d-md-flex
-                ul.navbar.nav.font-weight-bold
+            .header__nav.p-2.navbar.d-none.d-md-flex
+                ul.navbar.nav
                     li.nav-item
                         a(href='post.html').nav-link O mnie
                     li.nav-item
@@ -34,7 +34,8 @@ block content
     .author.container
         .author__inner.d-flex.align-items-center.flex-column-reverse.flex-sm-row
             .author__info.my-5
-                h2.h1.font-weight-bold.mb-5 Szukasz wiedzy? Test
+                h2.h1.font-weight-bold.mb-3 Webinary, marketing, sprzedaż
+                h3.h5.font-weight-bold.mb-3 Proponuję Ci sprawdzone i skuteczne rozwiązania
                 p.mb-4 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nobis consectetur, porro reiciendis ducimus in nesciunt dolores quo illum quasi quos hic dicta nemo veniam repellat deserunt earum mollitia obcaecati.
                 .links.font-weight-bold
                     a(href="#").mr-2.mb-2.border.p-2.bg-primary.text-white.d-inline-block.text-decoration-none
@@ -51,8 +52,13 @@ block content
                 i(data-feather='shopping-cart').icons.icon-3.position-absolute
                 i(data-feather='wifi').icons.icon-4.position-absolute
                 img(src=require('~images/ja.jpg')).ml-5
-
-    .container.bg-light
+    .clearfix
+    .bg-light.py-4
+        .container
+            .row
+                .bg-dark.rounded.p-4
+                    h2 Test
+    .container
         .row
             .col-md-6.mb-5
                 img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
