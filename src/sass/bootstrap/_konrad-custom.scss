@@ -5,7 +5,7 @@ $theme-colors: (
 );
 
 body {
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif!important;
 }
 .logo {
     
@@ -19,12 +19,16 @@ body {
     &__nav {
         a {
             color:$primary;
-            font-weight: 400;
+            font-weight: 500;
         }
     }
     .socials {
         svg {
             stroke: #7CCDDD;
+            transition: 0.15s all;
+            &:hover {
+                stroke: #234FA1;
+            }
         }
     }
 }
@@ -33,6 +37,9 @@ body {
 
     &__info {
         h2, h3 {
+            color:$primary;
+        }
+        a {
             color:$primary;
         }
     }
