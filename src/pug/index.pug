@@ -4,48 +4,89 @@ block variables
     - var title = 'Homepage';
 
 block content
-    .container-fluid.sticky-top.bg-white.position-relative
-        .px-3.py-4
-            .row
-                .col
-                    h1#logo.logo
-                        a(href='https://konrad.la/' title='Wybieraj najlepsze doświadczenia')
-                            img.mw-100(src=require('~images/logo.svg') alt='Wybieraj najlepsze doświadczenia') 
-                .col
-                    .navbar.navbar-expander
-                        ul.navbarnav
-                            li.nav-item
-                                a.nav-link O mnie
-                            li.nav-item
-                                a.nav-link O mnie
-                            li.nav-item
-                                a.nav-link O mnie
-                            li.nav-item
-                                a.nav-link O mnie
-                            li.nav-item
-                                a.nav-link O mnie
-                    include root/hamburger.pug
-    .container
+    .bg-white.px-3.py-4
+        header.header.d-none.d-md-flex.flex-row.align-items-center
+            .header__logo.p-2.mr-auto
+                a(href='https://konrad.la/' title='Wybieraj najlepsze doświadczenia').logo
+                    img.mw-100(src=require('~images/logo.svg') alt='Wybieraj najlepsze doświadczenia') 
+            .p-2.navbar
+                ul.navbar.nav
+                    li.nav-item
+                        a.nav-link O mnie
+                    li.nav-item
+                        a.nav-link O mnie
+                    li.nav-item
+                        a.nav-link O mnie
+                    li.nav-item
+                        a.nav-link O mnie
+                    li.nav-item
+                        a.nav-link O mnie
+            .socials
+                a(href='#').mx-2
+                    i(data-feather='facebook')
+                a(href='#').mx-2
+                    i(data-feather='instagram')
+                a(href='#').mx-2
+                    i(data-feather='linkedin')
+                a(href='#').mx-2
+                    i(data-feather='youtube')
+            include root/hamburger.pug
+    .author.container
+        .author__inner.d-flex.align-items-center.flex-column-reverse.flex-sm-row
+            .author__info
+                h2 Szukasz wiedzy?
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nobis consectetur, porro reiciendis ducimus in nesciunt dolores quo illum quasi quos hic dicta nemo veniam repellat deserunt earum mollitia obcaecati.
+            .author__image
+                img(src=require('~images/ja.jpg'))
+
+    .container.bg-light
         .row
-            .d-flex.flex-column.flex-md-row.flex-wrap.justify-content-between
-                .item.border-0.mx-4.mb-5
-                    img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
-                    .card-body
-                        h2.h2.font-weight-bold Card title
-                        p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                        a.btn.btn-lg.btn-primary Czytaj więcej
-                .item.border-0.mx-4.mb-5
-                    img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
-                    .card-body
-                        h2.h2.font-weight-bold Card title
-                        p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                .item.border-0.mx-4.mb-5
-                    img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
-                    .card-body
-                        h2.h2.font-weight-bold Card title
-                        p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                .item.border-0.mx-4.mb-5
-                    img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
-                    .card-body
-                        h2.h2.font-weight-bold Card title
-                        p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+            .col-md-6.mb-5
+                img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+                .card-body
+                    h2.h2.font-weight-bold Card title
+                    p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                    a.btn.btn-lg.btn-primary Czytaj więcej
+            .col-md-6.mb-5
+                img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+                .card-body
+                    h2.h2.font-weight-bold Card title
+                    p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                    a.btn.btn-lg.btn-primary Czytaj więcej
+            .col-md-6.mb-5
+                img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+                .card-body
+                    h2.h2.font-weight-bold Card title
+                    p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                    a.btn.btn-lg.btn-primary Czytaj więcej
+            .col-md-6.mb-5
+                img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+                .card-body
+                    h2.h2.font-weight-bold Card title
+                    p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                    a.btn.btn-lg.btn-primary Czytaj więcej
+
+
+    //- .container.bg-light
+    //-     .d-flex.flex-column.flex-md-row.flex-wrap.justify-content-between
+    //-         .item.border-0.mx-md-4.mb-5
+    //-             img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+    //-             .card-body
+    //-                 h2.h2.font-weight-bold Card title
+    //-                 p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+    //-                 a.btn.btn-lg.btn-primary Czytaj więcej
+    //-         .item.border-0.mx-4.mb-5
+    //-             img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+    //-             .card-body
+    //-                 h2.h2.font-weight-bold Card title
+    //-                 p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+    //-         .item.border-0.mx-4.mb-5
+    //-             img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+    //-             .card-body
+    //-                 h2.h2.font-weight-bold Card title
+    //-                 p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+    //-         .item.border-0.mx-4.mb-5
+    //-             img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+    //-             .card-body
+    //-                 h2.h2.font-weight-bold Card title
+    //-                 p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
