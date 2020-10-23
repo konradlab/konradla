@@ -31,6 +31,12 @@ body {
 .author {
     height: calc(100vh - 80px);
 
+    &__info {
+        h2, h3 {
+            color:$primary;
+        }
+    }
+
     &__image {
         
         .icons {
