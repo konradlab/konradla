@@ -1,13 +1,18 @@
+$theme-colors: (
+    "primary": #0d3960,
+);
+
 body {
     font-family: 'Montserrat', Arial, sans-serif;
 }
 .logo {
-    max-width: 180px;
+    
 }
 .header {
 
     &__logo {
         flex: 0 0 200px;
+        max-width: 150px;
     }
     &__nav {
 
@@ -23,6 +28,104 @@ body {
     height: calc(100vh - 80px);
 
     &__image {
+        
+        .icons {
+            width: 30px;
+            height: 30px;
+            transition: all 0.5s;
+            opacity: 0;
+            @media screen and (min-width:758px) {
+                width: 80px;
+                height: 80px;
+            }
+
+            &.icon--toggle {
+                opacity: 0.3;
+            }
+            &.icon-1 {
+                top:20%;
+                left:0;
+                transform: rotate(-5deg);
+                &.icon--toggle {
+                    transform: rotate(-25deg);
+                    top: 10%;
+                    left: 50px;
+                }
+            }
+            &.icon-2 {
+                top:50%;
+                left:25px;
+                transform: rotate(-10deg);
+                &.icon--toggle {
+                    transform: rotate(-35deg);
+                    top: 30%;
+                    left: 20px;
+                }
+            }
+            &.icon-3 {
+                top:150%;
+                left:0;
+                transform: rotate(-5deg);
+                &.icon--toggle {
+                    transform: rotate(-25deg);
+                    top: 80%;
+                    left: 27px;
+                }
+            }
+            &.icon-4 {
+                top:25%;
+                right:0;
+                transform: rotate(5deg);
+                &.icon--toggle {
+                    transform: rotate(25deg);
+                    top: 10%;
+                    right: 20px;
+                }
+            }
+            @media screen and (min-width:758px) {
+                &.icon-1 {
+                    top:20%;
+                    left:0;
+                    transform: rotate(-5deg);
+                    &.icon--toggle {
+                        transform: rotate(-25deg);
+                        top: 10%;
+                        left: -50px;
+                    }
+                }
+                &.icon-2 {
+                    top:50%;
+                    left:25px;
+                    transform: rotate(-10deg);
+                    &.icon--toggle {
+                        transform: rotate(-35deg);
+                        top: 30%;
+                        left: -20px;
+                    }
+                }
+                &.icon-3 {
+                    top:150%;
+                    left:0;
+                    transform: rotate(-5deg);
+                    &.icon--toggle {
+                        transform: rotate(-25deg);
+                        top: 80%;
+                        left: -50px;
+                    }
+                }
+                &.icon-4 {
+                    top:25%;
+                    right:0;
+                    transform: rotate(5deg);
+                    &.icon--toggle {
+                        transform: rotate(25deg);
+                        top: 10%;
+                        right: -20px;
+                    }
+                }
+            }   
+        }
+        
         img {
             max-height: 45vh;
             @media screen and (min-width: 768px) {

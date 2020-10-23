@@ -1,8 +1,8 @@
 .hamburger {
     height: 60px;
     width: 60px;
-    top:0;
-    right: 0;
+    top:5px;
+    right: 10px;
     position: absolute;
     .inner {
         width: 26px;
@@ -24,7 +24,7 @@
         position: absolute;
         height: 3px;
         width: 50%;
-        background-color: #0d3960;
+        background-color: $primary;
         opacity: 1;
         transform: rotate(0);
         transition: .2s ease-in-out;
@@ -87,6 +87,6 @@
     }
 
     &:hover span {
-        background-color: #0d3960;
+        background-color: $primary;
     }
 }

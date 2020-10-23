@@ -5,3 +5,4 @@ import './sass/main.scss';
 import './js/cookies-alert.js';
 import './js/hamburger.js';
 import './js/feather.js';
+import './js/icons.js';
