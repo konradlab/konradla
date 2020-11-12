@@ -12,78 +12,77 @@ block content
             .header__nav.p-2.navbar.d-none.d-md-flex
                 ul.navbar.nav
                     li.nav-item
-                        a(href='post.html').nav-link O mnie
-                    li.nav-item
-                        a(href='#').nav-link Blog
+                        a(href='#').nav-link Artykuły
                     li.nav-item
                         a(href='#').nav-link Evently
                     li.nav-item
-                        a(href='#').nav-link Webinary
+                        a(href='#').nav-link LIVE
                     li.nav-item
                         a(href='#').nav-link Kontakt
             .socials.d-none.d-md-flex
-                a(href='#').mx-2
+                a(href='https://www.facebook.com/konradlabno' target='_blank').mx-2
                     i(data-feather='facebook')
-                a(href='#').mx-2
+                a(href='https://www.instagram.com/konrad.labno/' target='_blank').mx-2
                     i(data-feather='instagram')
-                a(href='#').mx-2
+                a(href='https://www.linkedin.com/in/konrad-%C5%82abno-7147ba109/' target='_blank').mx-2
                     i(data-feather='linkedin')
-                a(href='#').mx-2
+                a(href='#' target='_blank').mx-2
                     i(data-feather='youtube')
             include root/hamburger.pug
     .author.container
         .author__inner.d-flex.align-items-center.flex-column-reverse.flex-sm-row
             .author__info.my-5
-                h2.h1.font-weight-bold.mb-3 Webinary, marketing, sprzedaż
-                h3.h5.font-weight-bold.mb-3 Proponuję Ci sprawdzone i skuteczne rozwiązania
-                p.mb-4 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nobis consectetur, porro reiciendis ducimus in nesciunt dolores quo illum quasi quos hic dicta nemo veniam repellat deserunt earum mollitia obcaecati.
+                h2.h1.font-weight-bold.mb-3 Jak się komunikować?
+                h3.h5.font-weight-bold.mb-3 Webinary, live, prezentacje, marketing, sprzedaż
+                p.mb-4 W 2018-2019 roku przeprowadziłem ponad 100 wystąpień - prezentacji - i&nbsp;byłem w tym naprawdę dobry. Dzisiaj przekładam tą wiedzę na spotkania online - to obecnie najlepsza metoda pozyskiwania klientów. Stworzyłem platformę Evently, która w tym pomaga. Pokażę Ci jak to robić.
                 .links.font-weight-bold
                     a(href="#").mr-2.mb-2.border.p-2.bg-primary.text-white.d-inline-block.text-decoration-none
                         | Platforma Evently
                     a(href="#").mr-2.mb-2.border.p-2.d-inline-block.text-decoration-none
-                        | Evently LIVE
-                    a(href="#").mr-2.mb-2.border.p-2.bg-danger.text-white.d-inline-block.text-decoration-none
-                        | Akademia Live
+                        | Spotkania online
+                    a(href="#").mr-2.mb-2.border.p-2.d-inline-block.text-decoration-none
+                        | Artykuły
+                    //- a(href="#").mr-2.mb-2.border.p-2.bg-danger.text-white.d-inline-block.text-decoration-none
+                    //-     | Akademia Live
                     a(href="#").mr-2.mb-2.border.p-2.d-inline-block.text-decoration-none
                         | Pobierz ebooka "Jak dobrze przygotować się do LIVE?"
             .author__image.position-relative
-                i(data-feather='send').icons.icon-1.position-absolute
-                i(data-feather='video').icons.icon-2.position-absolute
-                i(data-feather='shopping-cart').icons.icon-3.position-absolute
-                i(data-feather='wifi').icons.icon-4.position-absolute
-                img(src=require('~images/ja.jpg')).ml-5
+                //- i(data-feather='send').icons.icon-1.position-absolute
+                //- i(data-feather='video').icons.icon-2.position-absolute
+                //- i(data-feather='shopping-cart').icons.icon-3.position-absolute
+                //- i(data-feather='wifi').icons.icon-4.position-absolute
+                img(src=require('~images/ja.jpg')).ml-5.mr-md-n4
     .clearfix
-    .bg-light.py-4
+    .bg-light.pb-4
+        .container
+            
+    .bg-light-blue
         .container
             .row
-                .bg-dark.rounded.p-4
-                    h2 Test
-    .container
-        .row
-            .col-md-6.mb-5
-                img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
-                .card-body
-                    h2.h2.font-weight-bold Card title
-                    p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                    a.btn.btn-lg.btn-primary Czytaj więcej
-            .col-md-6.mb-5
-                img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
-                .card-body
-                    h2.h2.font-weight-bold Card title
-                    p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                    a.btn.btn-lg.btn-primary Czytaj więcej
-            .col-md-6.mb-5
-                img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
-                .card-body
-                    h2.h2.font-weight-bold Card title
-                    p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                    a.btn.btn-lg.btn-primary Czytaj więcej
-            .col-md-6.mb-5
-                img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
-                .card-body
-                    h2.h2.font-weight-bold Card title
-                    p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                    a.btn.btn-lg.btn-primary Czytaj więcej
+                .col-md-6.mb-5
+                    img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+                    .card-body
+                        h2.h2.font-weight-bold Card title
+                        p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        a.btn.btn-lg.btn-secondary Czytaj więcej
+                .col-md-6.mb-5
+                    img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+                    .card-body
+                        h2.h2.font-weight-bold Card title
+                        p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        a.btn.btn-lg.btn-primary Czytaj więcej
+                .col-md-6.mb-5
+                    img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+                    .card-body
+                        h2.h2.font-weight-bold Card title
+                        p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        a.btn.btn-lg.btn-primary Czytaj więcej
+                .col-md-6.mb-5
+                    img.card-img-top(src=require('~images/post.jpg') alt='Card image cap')
+                    .card-body
+                        h2.h2.font-weight-bold Card title
+                        p This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        a.btn.btn-lg.btn-primary Czytaj więcej
 
 
     //- .container.bg-light

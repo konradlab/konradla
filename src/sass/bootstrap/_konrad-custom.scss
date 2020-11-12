@@ -5,10 +5,18 @@ $theme-colors: (
 );
 
 body {
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif!important;
+    
 }
 .logo {
     
+}
+.bg-light-blue {
+    background-color: #F1FAFF;
+}
+.btn-secondary {
+    color:#000!important;
+    background: #DCA11D!important;
 }
 .header {
 
@@ -19,17 +27,30 @@ body {
     &__nav {
         a {
             color:$primary;
+            font-weight: 500;
         }
     }
-    &__social {
-        height: 60px;
-        li {
-            width: 18px;
+    .socials {
+        svg {
+            stroke: #7CCDDD;
+            transition: 0.15s all;
+            &:hover {
+                stroke: #234FA1;
+            }
         }
     }
 }
 .author {
-    height: calc(100vh - 80px);
+    height: 100vh;
+
+    &__info {
+        h2, h3 {
+            color:$primary;
+        }
+        a {
+            color:$primary;
+        }
+    }
 
     &__image {
         
